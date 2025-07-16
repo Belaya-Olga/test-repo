@@ -1,0 +1,335 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #11110efe;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  align-self: flex-start;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.section {
+  padding: 10px 0px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: auto;
+}
+/* -------------header------------------------ */
+.header {
+  max-height: 100px;
+  padding-right: 70px;
+}
+.header-section {
+  padding: 10px 70px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-link {
+  height: 20px;
+}
+.logo {
+  width: 200px;
+  max-height: 50px;
+}
+
+.header-login {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #0ff;
+  box-shadow: 0 0 10px #0ff;
+}
+.login-btn {
+  background-color: #0ff;
+  color: #ffffff;
+  border-radius: 4px;
+  min-height: 30px;
+  border: 1px solid #11110efe;
+  width: 80px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.regestr-btn {
+  border: 1px solid #11110efe;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #cf0e48;
+  width: 120px;
+  min-height: 30px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.regestr-btn:hover,
+.regestr-btn:focus {
+  box-shadow: 0 0 12px #e74978;
+}
+.navigation .navigation-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+.navigation-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-button:hover,
+.navigation-button:focus {
+  text-shadow: 0 0 15px #ffffff;
+}
+/* -----------------------------cont------------------------- */
+
+.content-header {
+  font-family: "Poppins", serif;
+  font-size: 60px;
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #cf0e48;
+  margin-bottom: 20px;
+}
+.content-header-sp {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(112, 217, 217);
+}
+.content-text {
+  max-width: 800px;
+  font-size: 15px;
+  font-family: "Poppins", serif;
+}
+.banner {
+  margin-top: 20px;
+  background-image: url(./images/cosmobet_banner_4.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.banner-header {
+  font-size: 35px;
+  font-family: "Poppins", serif;
+  text-shadow: 0 0 7px #ffffff;
+}
+.banner-btn {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #cf0e48;
+  color: #ffffff;
+  border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.banner-btn:hover,
+.banner-btn:focus {
+  box-shadow: 0 0 12px #e74978;
+  text-shadow: 0 0 5px #ffffff;
+}
+.banner-text {
+  max-width: 400px;
+  font-size: 16px;
+  font-family: "Poppins", serif;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 40px 20px;
+    min-height: 300px;
+  }
+
+  .banner-header {
+    font-size: 28px;
+  }
+
+  .banner-btn {
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner {
+    padding: 30px 10px;
+    min-height: 220px;
+    gap: 16px;
+  }
+
+  .banner-header {
+    font-size: 22px;
+  }
+
+  .banner-text {
+    font-size: 14px;
+  }
+}
+/* ------------------footer------------- */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav .footer-list {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Poppins", serif;
+  font-size: 20px;
+}
+.footer-nav .footer-list li {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-nav .footer-list li:hover,
+.footer-nav .footer-list li:focus {
+  text-shadow: 0 0 7px #ffffff;
+}
+.pay .footer-pay-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.skrill-icon {
+  font-size: 20px;
+  font-weight: 800;
+  color: #850ecf;
+  background: none;
+  border: none;
+}
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+}
+.footer-link {
+  font-size: 17px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: blue;
+}
+.pay-btn {
+  background: none;
+  border: none;
+}
+/* ------------------gallary----------------------- */
+.gallary {
+  padding-top: 20px;
+}
+.swiper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+[data-swiper="gallery"] {
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  max-width: 1000px !important;
+  height: 500px !important;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.swiper-slide:hover img,
+.swiper-slide:focus-within img {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 1px 1px 1px #fdcbe1;
+}
+.gallery-item {
+  width: 200px !important;
+  height: 320px !important;
+}
+.gallary-header {
+  font-weight: 600;
+  font-size: 30px;
+  text-shadow: 0 0 7px #ffffff;
+}
